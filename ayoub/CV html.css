@@ -1,0 +1,76 @@
+body
+{
+	color: green;		/*Tout le texte qui se trouve dans la balise body sera en vert*/
+}
+
+h1
+{
+	color: red ;
+	text-align: center;		/*tout les titres h1 seront en rouge, aligner au centre et feront la taille indiquer (3em)*/
+	font-size: 3em;
+}
+
+h2
+{
+	font-size: 2em;		/*tout les titres h2 feront la taille de 2em*/
+}
+
+.titre
+{
+	text-align: center;			/*tout les balises appartenant à la classe "titre" seront centrer*/
+}
+
+body
+{
+background: url("img/chinois.jpg") fixed;		/*toute la balise body contiendra l'image nomé chinois.jpg du document img comme fond d'écran*/
+}
+
+.encadrer
+{
+	border: 3px green solid;
+	border-radius: 10px;		/*toutes les balises appartenant à la classe "encadrer" auront des boordures avec un trait normal (solid) de 3 pixels et les bords seront arrondi (border-radius) */
+}
+
+strong
+{
+	font-size: 22px;		/*tout ce qui est encadrer de la balise strong fera la taille de 22 pixels*/
+}
+
+@font-face 
+{				
+	font-family: 'Exo2-ExtraLight';
+	src: url('Exo2-ExtraLight.otf');		/*font face permet définir une nouvelle police d'écriture, font-family donne le noms de celle-ci et src le chemin d'accès*/
+}
+
+body	
+{
+font-family: 'Exo2-ExtraLight', Arial, serif;	/* Utilisation de la police qu'on vient de définir sur toute la balise body et font-family dit quel police utiliser. Il faut en mettre plusieurs au cas où certaines ne marcherais pas ou ne serai pas pris en compte par le navigateur de l'utilisateur */
+}
+
+a 
+{
+text-decoration: none;
+color: darkred;		/* ici on initialise l'apparence des liens par défaut lorqu'ils ne sont pas pointer par la souris. ils sont en italique et de couleur rouge foncé */
+font-style: italic;
+}
+
+a:hover 
+{
+text-decoration: underline;
+color: green;	/* ici c'est l'apparence des liens quand la souris les survole (a pour le lien et hover pour quand ils sont survolé) j'ai choisi de les mettre en vert quand c'est le cas et de les souligné */
+}
+
+a:active 
+{
+background-color: blue;		/* Quand le visiteur clique sur le lien il deviens légèrement surligner en bleu */
+}
+
+a:visited
+{
+	color: gray;	/* Quand le visiteur à déjà cliquer sur le lien il deviens gris */
+}
+
+#bouton
+{
+	color: red;		/* la balise portant l'identifiant "bouton" est écrit en rouge */
+}

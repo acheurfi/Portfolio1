@@ -1,0 +1,164 @@
+<!DOCTYPE html>		<!-- détermine quel version de html nous utilisons -->
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="CV html.css" /> 
+			<title>Mon CV</title>
+		</head>			<!-- dans l'en-tête il y a le titre et la balise "link" qui sert a relier cette page à un fichier css-->
+
+		<body>
+			
+			<h1 id="acceuil">CHEURFI Ayoub</h1> 		<!-- la balise h1 me permet d'afficher "CHEURFI Ayoub" comme titre et "id" associe ce texte à l'ancre' "acceuil"-->
+			
+			<h2 class="titre">BTS SIO <br> (Service Informatique aux Organisations)</h2>		<!-- parreillement que la ligne d'au dessus il y a un titre cette fois-ci avec h2 donc un peu plus petit et associe ce texte a une classe cette fois-ci. La balise <br> permet d'aller à la ligne -->
+			
+			<a href="img/goku.jpg">
+				<img src="img/miniature_goku.jpg" alt="Photo de profil" title="Faites pas attention" />
+			</a>		<!-- La balise <a href> permet d'inserer un lien, ici celui qui conduit à l'image agrandi. La balise <img> nous fait inserer une image, l'attribut src est l'endroit où l'on doit inserer le lien de l'image (soit le fichier dans lequel elle est avec son nom soit elle peut être directement prise sur internet). Puis nous avons alt qui mets un texte au cas où l'image ne s'affiche pas (mal chargé, pas pris en compte par le navigateur ou autre problèmes) et title m'a permis de l'aisser un petit message s'afficher lorsque le pointeur de la souris est dessus -->
+			
+			<p> 
+				<a href="https://www.linkedin.com/in/ayoub-cheurfi-786926247" title="mon profil">
+					@Linkedin
+				</a>
+			<br>
+				<a href="http://www.lyc-vilgenis-massy.ac-versailles.fr/" title="mon lycée" target="blank">
+					Site du Lycée
+				</a>
+			</p>		<!-- La balise <p> ouvre un paragraphe. Ici j'y ai placé un texte "@LinkedIn" et je lui ai assigné un lien qui envoie sur moon profil LinkedIn avec encore un petit message lorsque la souris passe dessus -->
+			<!-- après avoir sauter une ligne j'y ai mis le site du lycée avec la balise <a href> mais j'y ai ajouté l'attribut "traget=blank" pour que le lien s'ouvre sur une nouvelle fenêtre du navigateur -->
+
+			<p>
+				0666744940 
+					<br>
+				ayoub.cheurfi0409@gmail.com
+					<br>
+				18ans
+					<br>
+				94800, Villejuif
+			</p>
+			<!-- Un paragraphe avec noté mon dresse mail, numéro de téléphone et adresse, avec des sauts de ligne grâce a <br> -->
+			<h2>Formation :</h2>
+			<ul class="encadrer">
+				<li>
+					BTS SIO 
+						<br>
+					2022-2024 - Lycée de Villgenis, Massy
+						<br>
+					BTS SIO (Service Informatique aux Organisations : option B Locigielles et Application Métiers)
+				</li>
+
+				<li>
+					Baccalauréat Technologique
+						<br>
+					2020-2022 - Lycée Polyvalent de Cachan, Cachan
+						<br>
+					Filiaire STI2D (Sciences et Technologies de l'Industrie et du Développement Durable)
+						<br>
+					Spécialité SIN (Système d'Information et Numérique)
+				</li>
+
+				<li>
+					Brevet des collèges
+						<br>
+					2018-2019 - Collège Karl Marx, Villejuif
+				</li>
+			</ul>		<!-- Le titre en h2 comme le précédent, puis la balise <ul> m'a permis de faire une liste (je pouvait faire une liste ordonnée avec des numéros (ol) ou une liste avec des points sans ordres particulier (li), j'ai donc choisi la deuxième option) et de mettre cette liste dans la classe "encadrer". J'ai ensuite fait 3 listes bien espacées -->
+			
+			<h2>Mes compétences :</h2>
+			
+			<ul class="encadrer">
+				<li> 
+					<strong>Programmation :</strong>
+						<br>
+					Web : HTML/CSS, PHP
+						<br>
+					Algo : Python
+						<br>
+					Base de données : SQL
+					<br>
+					Script : PowerShell, Bash
+				</li>
+
+				<li> 
+					<strong>Réseau :</strong>
+						<br>
+					Materiel : Cissco, STORMSHIELD 
+					<br>
+					Virtualisation : VMVare, Virtualbox
+						<br>
+					TCP/IP, routage, VLANS/TRUNK
+				</li>
+
+             	<li> 
+             		<strong>Système :</strong>
+             			<br>
+					OS : Windows, Linux, MacOs
+						<br>
+					serveur : Windows server 2019, Debian
+						<br>
+					services : Web (Apache 2, iis)
+						<br>
+					BDD (MySQL)
+						<br>
+					Résaux (DHCP, DNS, AD)
+						<br>
+					Wifi
+				</li>
+
+ 				<li> 
+ 					<strong>Cyber sécurité :</strong>
+ 						<br>
+					formations : CNIL, ANSSI
+				</li>
+
+				<li>
+					<strong>Logiels :</strong>
+						<br>
+					Bureautique : Microsoft Office (Excel, PowerPoint, Word)
+						<br>
+					Développement : Sublime Text, Notepad, Gît, GitHub
+						<br>
+					Infographie : Visual Studio
+						<br>
+					Modélisation : VISIO, Solidworks
+				</li>
+             	<li>
+             		<strong>Méthodologie :</strong>
+             			<br>
+					Gestion de projet, ITIL, Diagramme de CANTT, Google Drive
+				</li>
+			</ul>		<!-- J'ai utilisé exactement le même procéder que ce qui est décris au commentaire précédent en y ajoutant une chose. Le premier mots de chaque liste est encadrer^par les balises <strong> ce qui signifie que je veux les notifiers comme mots importants, je déciderais de leurs spécificité plus tard sur la page css -->
+
+			<h2>Experiences professionnels :</h2>
+			
+			<p class="encadrer"> 
+				Projet professionel 
+				<em>(Projet de STI2D)</em>
+			</p>
+
+			<h2>Atouts :</h2>
+
+			<ul class="encadrer">
+				<li>
+					Capacité d'analyse et de synthèse
+				</li>
+				<li>
+					Adaptabilité, réactivité
+				</li>
+				<li>
+					Esprit d'equipe
+				</li>
+				<li>
+					Contexte international (Anglais)
+				</li>
+				<li>
+					Sens du service
+				</li>
+			</ul>		<!-- Encore un titre toujours en h2 puis un paragraphe est ouvert pour écrire "projet professionel" et le mettre dans la classe "encadrer" Il y a aussi la balise <em> qui désigne elle aussi des mots important tout comme <strong>-->
+
+			<p>Vous pouvez consulter mon <a href="CV flowcv.pdf">CV</a> ou ma <a href="lettre de motivation.docx"lettre de motivation></a> si vous le désirez
+			</p>
+			<!-- ici le paragraphe contient un mots "ancien CV" qui ramène sur une autre page de mon site et pour finir le lien href envoie vers l'ancre "acceuil" qeu j'ai placé un peu plus tôt -->
+
+		</body>
+	</html>
